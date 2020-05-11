@@ -20,6 +20,8 @@ namespace WebAdvert.SearchWorker
         public SearchWorker(IElasticClient client)
         {
             _client = client;
+
+
         }
         public async Task Function(SNSEvent snsEvent, ILambdaContext context)
         {
